@@ -1,0 +1,27 @@
+ #include<iostream>
+ using namespace std;
+ int main()
+ {
+     int n;
+     cin>>n;
+     while(n--)
+     {
+         int x,sum=0;
+         cin>>x;
+         for(int i=1;i<x;i++)
+         {
+             if(x%i == 0)
+             {
+                 sum=sum+i;
+             }
+         }
+         if(sum==x)
+         {
+             cout<<x<< " eh perfeito"<<endl;
+         }
+         if(sum!=x)
+         {
+             cout<<x<< " nao eh perfeito"<<endl;
+         }
+     }
+ }
