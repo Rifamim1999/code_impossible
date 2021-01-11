@@ -1,0 +1,35 @@
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+     while(!0)
+     {
+         int x,sum=0,j=1;
+         cin>>x;
+         if(x==0)
+         {
+             break;
+         }
+         if(x%2 == 0)
+         {
+            while(j<=5)
+            {
+                sum=sum+x;
+                x=x+2;
+                j++;
+            }
+         }
+         if(x%2 != 0)
+         {
+             x=x+1;
+             while(j<=5)
+             {
+                 sum=sum+x;
+                 x=x+2;
+                 j++;
+             }
+         }
+         cout<<sum<<endl;
+     }
+}
