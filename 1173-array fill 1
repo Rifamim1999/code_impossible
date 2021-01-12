@@ -1,0 +1,13 @@
+ #include<iostream>
+ using namespace std;
+ int main()
+ {
+       int a[11],i,n;
+       cin>>n;
+       for(i=0;i<10;i++)
+       {
+           a[i]=n;
+           n=n*2;
+           cout<< "X["<<i<< "] = "<<a[i]<<endl;
+       }
+ }
