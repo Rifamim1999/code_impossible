@@ -1,0 +1,19 @@
+ #include<iostream>
+ using namespace std;
+ int main()
+ {
+     int a[1001],i,x,n=0;
+     cin>>x;
+     for(i=0;i<1000;i++)
+     {
+         if(n<x)
+         {
+             cout<< "N[" <<i<< "] = "<<n<<endl;
+             n++;
+         }
+         if(n>=x)
+         {
+             n=0;
+         }
+     }
+ }
