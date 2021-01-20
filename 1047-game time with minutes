@@ -1,0 +1,38 @@
+#include<iostream>
+ using namespace std;
+ int main()
+ {
+     int ih,im,fh,fm,h,m;
+     cin>>ih>>im>>fh>>fm;
+     if(ih==fh && im==fm)
+        cout<< "O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)"<<endl;
+     else
+     {
+     if(im<=fm)
+        {
+            m=fm-im;
+            if(fh>=ih)
+            {
+                h=fh-ih;
+            }
+            if(ih>fh)
+            {
+                h=24-(ih-fh);
+            }
+        }
+     if(im>fm)
+        {
+            m=60-(im-fm);
+            if(ih<fh)
+             {
+                 h=fh-ih-1;
+             }
+             if(ih>=fh)
+             {
+                 h=23-(ih-fh);
+             }
+            }
+     cout<< "O JOGO DUROU "<<h<< " HORA(S) E "<<m<< " MINUTO(S)"<<endl;
+     }
+ }
+10
